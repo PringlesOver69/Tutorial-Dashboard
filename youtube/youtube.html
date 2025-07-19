@@ -10,66 +10,90 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      p {
-        font-family: Roboto, Arial;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .thumbnail {
-        width: 100%;
-      }
-
-      .search-bar {
-        display: block;
-      }
-
-      .video-title {
-        margin-top: 0;
-        font-size: 14px;
-        font-weight: 500;
-        margin-bottom: 12px;
-      }
-
-      .video-info-grid {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-
-      .profile-picture {
-        width: 40px;
-        border-radius: 50%;
-      }
-
-      .thumbnail-row {
-        margin-bottom: 12px;
-      }
-
-      .video-author,
-      .video-stats {
-        font-size: 12px;
-        color: rgb(96, 96, 96);
-      }
-
-      .video-author {
-        margin-bottom: 4px;
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
   <body>
-    <input class="search-bar" type="text" placeholder="Search" />
+    <div class="header">
+      <div class="left-section">
+        <img src="icons/hamburger-menu.svg" class="hamburger-menu" />
+        <img src="icons/youtube-logo.svg" class="youtube-logo" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="icons/voice-search-icon.svg"
+            alt=""
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" alt="" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div>
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="" />
+        </div>
+        <div class="notifications-icon-container">
+          <img
+            class="notifications-icon"
+            src="icons/notifications.svg"
+            alt=""
+          />
+          <div class="notifications-count">3</div>
+        </div>
+        <div>
+          <img
+            class="current-user-picture"
+            src="channel-pictures/my-channel.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="" />
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </div>
+
     <div class="video-grid">
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" />
+          <div class="video-time">14:20</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -91,6 +115,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="" />
+          <div class="video-time">8:22</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -110,6 +135,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="" />
+          <div class="video-time">9:13</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -131,6 +157,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="" />
+          <div class="video-time">22:09</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -152,6 +179,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="" />
+          <div class="video-time">11:17</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -173,6 +201,7 @@
       <div class="video-preview">
         <div class="thumbnail-row">
           <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="" />
+          <div class="video-time">19:59</div>
         </div>
         <div class="video-info-grid">
           <div class="channel-picture">
@@ -184,7 +213,7 @@
           </div>
           <div class="video-info">
             <p class="video-title">
-              Anything You Can Fit In The Cirkcle I'll Pay For
+              Anything You Can Fit In The Circle I'll Pay For
             </p>
             <p class="video-author">MrBeast</p>
             <p class="video-stats">141M views &#183; 1 year ago</p>
